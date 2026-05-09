@@ -21,7 +21,7 @@
 **合理例外（不是安全问题）：**
 - 数据库 skill 做 SQL 查询、subprocess 调用 CLI 工具
 - 部署 skill 使用 SSH、kubectl 等运维工具
-- 内部 skill 访问公司内部 HTTP URL（如 bnpm.byted.org）
+- 内部 skill 访问公司内网 HTTP URL
 - skill-creator 调用 `claude -p` 进行 eval 测试
 
 **判断原则：** 代码行为是否与 skill 声明的功能一致？
